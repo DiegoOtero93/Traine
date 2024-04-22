@@ -1,0 +1,82 @@
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.992);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0rem;
+    background-color: rgba(55, 55, 55, 0.475);
+    width: 100%;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+}
+
+.text {
+    font-size: 6rem;
+    margin: 1rem;
+    color: rgba(125, 125, 125, 0.5);
+    transition: color 0.3s ease;
+    text-align: left;
+    cursor: pointer;
+}
+
+.text__pequeño {
+    margin: 6rem 2rem 0 0rem;
+    color: rgba(125, 125, 125, 0.5);
+}
+
+.no__hover {
+    pointer-events: none;
+}
+
+.text:hover {
+    color: rgba(255, 255, 255, 0.646);
+    cursor: pointer;
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .text {
+        font-size: 4vw; /* Ajuste de tamaño de fuente para dispositivos móviles */
+    }
+    .text__pequeño {
+        margin: 1.5rem 0 0 ; /* Ajuste de márgenes para dispositivos móviles */
+        font-size: 0.5rem;
+    }
+}
+
+/* Consulta de medios para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Aquí puedes agregar estilos específicos para tabletas si es necesario */
+    .text {
+        font-size: 8vw; /* Ajuste de tamaño de fuente para dispositivos móviles */
+    }
+    .text__pequeño {
+        margin: 4.7rem 0 0 ; /* Ajuste de márgenes para dispositivos móviles */
+        font-size: 1rem;
+    }
+}
+
+/* Consulta de medios para ordenadores de escritorio */
+@media only screen and (min-width: 1025px) {
+    /* Aquí puedes agregar estilos específicos para ordenadores de escritorio si es necesario */
+}
+
+
+
+
+
+
+
+
+
